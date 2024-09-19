@@ -1,0 +1,230 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: auto;
+    width: 100%;
+    font-family: sans-serif;
+
+}
+
+.container{
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+  
+}
+
+.leftPanel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(./Images/alatBackground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:inherit;
+    width: 55%;
+    padding: 20px 5px ;
+}
+
+.contactInfoBox{
+    border: 2px solid green;
+    width: 100%;
+    height: 100%;
+}
+.message{
+    color: white;
+    margin-bottom: 20px;
+}
+h6{
+font-size: 18px;
+font-weight: 700;
+}
+p{
+    line-height: 24px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.contactBar{
+    display: flex;
+    margin-bottom: 20px;
+    gap: 20px;
+    color: white;
+}
+
+.contactBar .mail,
+ .contactBar .phone {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+ }
+ a{
+color: inherit;
+text-decoration: inherit;
+ }
+
+ .info .iconBar{
+    display: flex;
+    gap: 24px;
+ }
+
+ .iconBar .instagram,
+ .iconBar .facebook,
+ .iconBar .twitter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    border-radius: 50%;
+ }
+
+.instagram .bxl-instagram,
+ .facebook .bxl-facebook,
+  .twitter .bxl-twitter{
+font-size: 26px;
+color: rgba(109, 23, 52,1) ;
+}
+.facebook .bxl-facebook{
+    font-size: 36px;
+    margin-top: 5px;
+}
+
+
+.rightPanel{
+    width: 45%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.rightPanel .details{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:0 24px;
+
+}
+
+.formBox{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    min-width: 60%;
+}
+
+.formBox .license{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 32px;
+}
+.formBox .license .cbn{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+h1{
+    font-size: 1.2rem;
+}
+.formBox span{
+    display: block;
+    margin-top: 12px;
+    width: 40px;
+    height: 4px;
+    background-color: rgba(171, 11, 75, 1);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+}
+
+form label{
+    color: #757575;
+    width: 100%;
+    display: flex;
+    position: relative;
+    font-size: 0.9rem;
+    transform: translate(0,0) scale(1);
+    align-items: center;
+    margin-bottom: 8px;
+    justify-content: space-between;
+    letter-spacing: 0.2px;
+}
+
+form .emailBox .emailInputBox,
+form .passwordBox .passwordInputBox{
+    display: flex;
+    color: #757575;
+    width: 100%;
+    height: fit-content;
+    border: 1px solid #ced4da;
+    padding: 5px 0 5px 12px;
+    position: relative;
+    font-size: 1rem;
+    min-width: 100px;
+    border-radius: 4px;
+}
+ input{
+    color: #757575;
+    display: block;
+    padding: 6px 0 7px;
+    font-weight: 400;
+    font-size: 1rem;
+   border: none;
+    margin: 0;
+    width: 100%;
+}
+
+form .passwordBox .passwordInputBox .bx-low-vision{
+margin-right: 8px;
+}
+.eye{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    width: 100%;
+    background-color: rgba(171, 11, 75, 1);
+    color: white;
+    border: none;
+    padding: 8px 32px;
+    min-width: 160px;
+    border-radius: 4px;
+}
+.signUp{
+    display: flex;
+    width: 100%;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.2px;
+}
+
+.consent{
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+}
+
+@media (max-width: 767px) {
+    .leftPanel{
+        display: none;
+    }
+
+    .rightPanel{
+        width: 100%;
+    }
+}
